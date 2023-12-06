@@ -39,7 +39,7 @@ class ProductManager {
       if (foundProduct) {
         return foundProduct;
       } else {
-        console.error('Not found');
+        console.error('ID de producto no encontrado...');
       }
     }
   }
