@@ -43,3 +43,16 @@ class ProductManager {
       }
     }
   }
+
+//TESTEO//
+
+  const productManager = new ProductManager();
+
+  productManager.addProduct('Producto 1', 'Descripción 1', 5000, 'imagen1.jpg', 'P001', 50);
+  productManager.addProduct('Producto 2', 'Descripción 2', 6000, 'imagen2.jpg', 'P002', 30);
+  
+  const allProducts = productManager.getProducts();
+  console.log('Todos los productos:', allProducts);
+  
+  const productById = productManager.getProductById(2);
+  console.log('Producto encontrado por ID:', productById);
